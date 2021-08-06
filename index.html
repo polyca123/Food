@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Food</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+}
+  </style>
+</head>
+<body>
+  <div class="header">Favorite Food</div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="https://www.kikkoman.eu/fileadmin/_processed_/1/5/csm_WEB_Ramen_with_ham_and_marinated_egg_1df8e80f20.jpg"></div>
+  </div>
+  <div class="container">Ramen:</div>
+    <div class="container about">Ramen is a Japanese noodle soup. It consists of Chinese-style wheat noodles served in a meat or (occasionally) fish-based
+    broth, often flavored with soy sauce or miso, and uses toppings such as sliced pork menma, and scallions.</div>
+    <div class="content">
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header container about"><i class="material-icons">filter_drama</i>Noodles</div>
+          <div class="collapsible-body"><span>Most noodles are made from four basic ingredients: wheat flour, salt, water, and kansui a type of alkaline mineral water, containing sodium carbonate and usually potassium carbonate, as well as sometimes a
+          small amount of phosphoric acid.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header container about"><i class="material-icons">place</i>Soup</div>
+          <div class="collapsible-body"><span>Ramen soup is generally made from stock based on chicken or pork, combined with a variety of ingredients such as pork
+          bones, katsuobushi (skipjack tuna flakes), niboshi (dried baby sardines), beef bones, shiitake, onions, and kombu (kelp).</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header container about"><i class="material-icons">whatshot</i>Flavor</div>
+          <div class="collapsible-body"><span>
+            <p>Shōyu (醤油, "soy sauce") ramen has a clear brown broth, based on a chicken and vegetable (or sometimes fish or beef)
+            stock with plenty of soy sauce added resulting in a soup that is tangy, salty, and savory yet still fairly light on the
+            palate.</p>
+            <br>
+            <p>Shio (塩,"salt") ramen is the oldest of the four types. It has a pale, clear, yellowish broth made with plenty of
+            salt and any combination of chicken, vegetables, fish, and seaweed.</p>
+            <br>
+            <p>Miso (味噌) This uniquely Japanese ramen, which was developed in Sapporo Hokkaido, features a broth that combines copious miso and
+            is blended with oily chicken or fish broth – and sometimes with tonkotsu or lard – to create a thick, nutty, slightly
+            sweet and very hearty soup.</p>
+            <br>
+            <p>Karē (カレー,"curry") ramen, ramen cooked with curry soup, is thought that was born spontaneously relatively recently in
+            Japan.</p>
+        </span></div>
+        </li>
+      </ul>
+    </div>
+    <div class="container-fuid">
+      <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="https://assets.bonappetit.com/photos/57ae038653e63daf11a4e122/16:9/w_1280,c_limit/shoyu-ramen.jpg"  alt="Shoyu Ramen"></a>
+        <a class="carousel-item" href="#two!"><img src="https://www.seriouseats.com/thmb/GZIwSoolxGZJ3XUSNKjpYPmW4pM=/1500x844/smart/filters:no_upscale()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2019__03__20190313-shio-ramen-vicky-wasik-35-86b1cb798e0941ae9aa473c232a3e0b9.jpg" alt="Shio Ramen"></a>
+        <a class="carousel-item" href="#three!"><img src="https://www.justonecookbook.com/wp-content/uploads/2019/05/Miso-Ramen-I-500x500.jpg" alt="Miso Ramen"></a>
+        <a class="carousel-item" href="#four!"><img src="https://www.justonecookbook.com/wp-content/uploads/2020/05/Curry-Ramen-9527-I.jpg" alt="Curry Ramen"></a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems, {});
+      });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems, {});
+      });
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems, {});
+      });
+    </script>
+</body>
+</html>
